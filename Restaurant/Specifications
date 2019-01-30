@@ -1,0 +1,16 @@
+Task:
+  n people went to a restaurant during the day. You know the entrance and exit time
+  of each customer. Your task is to find out the greatest amount of people at a time
+  in the restaurant.
+
+Input:
+  The first line of input contains an integer n: The amount of customers
+
+  After this follows n input lines. In each line there are two integer a_i and
+  b_i, i = 1, 2,...,n. This means that a customer entered the restaurant at time
+  a_i and exited at time b_i.
+
+  The can only be a single event at any time (customer entering or exiting).
+
+Output:
+  Print one integer: The greatest amount of people at a time in the restaurant.

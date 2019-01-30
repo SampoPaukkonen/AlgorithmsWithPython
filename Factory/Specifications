@@ -1,0 +1,15 @@
+Task:
+  There are n machines in a factory where each of which can produce a product in a set time.
+  Your task is to make m products with the help of the machines.
+
+  What is the smallest possible time for this?
+
+Input:
+  The first input line contains two integers n and m: the number of machines and
+  the number of products to produce.
+
+  The next input line has n integers a1, a2,...,an: the time it takes for one machine
+  to produce a product.
+
+Output:
+  Print one integer: Smallest possible time to produce the m products.
