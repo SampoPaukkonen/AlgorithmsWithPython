@@ -8,24 +8,20 @@ def main():
     n = deque(sorted(n))
     p.sort()
     m = OrderedDict()                                     #OrderedDict for the apartments with string indicies as keys
-    #m = OrderedDict(enumerate(sorted(m)))
     if (p):                                               #To check if p has anything inside
-        for i in range(len(p) - 1):
-            m["{}".format(i)] = p[i]
+        for i in range(len(p)):
+            m[str(i)] = p[i]
     d = r[-1]                                             #delta is the last element in r
     counter = 0
     while(m and n):
+        while (m and n[0] - d > m[next(iter(m))]):        #Here we take out the apartments which will not satisfy anyones needs.
+            del m[next(iter(m))]
         i = next((i for i,a in m.items() if abs(n[0] - a) <= d), "NotFound") #Index of the apartment for the smallest size wish
         if (i != "NotFound"):
             del m[i]
-            #m.pop(i)
             n.popleft()
             counter += 1
         else:
             n.popleft()
     print(counter)
 main()
-
-"""TODO: Change the datas structure for example to dict of any that allows removing elements in O(1) time
-, or something similar.
-Try using only regular dict since we will be adding the stuff we need in the order we want."""
