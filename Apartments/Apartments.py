@@ -25,3 +25,6 @@ def main():
             n.popleft()
     print(counter)
 main()
+TODO: "Haetaan binäärihaulla välin alaraja. Jos löydetty alkio on liian iso, niin ei ole olemassa. Muuten kaikki OK."
+"a" == 'a'
+"Muuta dequen käyttö s.e. ei poisteta asioita vaan siirretään osoitinta tavallisessa listassa."
