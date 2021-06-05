@@ -29,7 +29,6 @@ def place_queen(current_placements, n, solutions):
 
 def main():
     n = [int(x) for x in stdin.readline().split()][0]
-    # n = int(input())
     board     = []
     solutions = []
     place_queen(board, n, solutions)
